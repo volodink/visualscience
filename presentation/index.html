@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Основы научной визуализации</title>
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <meta name="description" content="Основы научной визуализации">
+        <meta name="author" content="Константин Володин">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="css/samdark.css" id="theme">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!--
+        HOTKEYS:
+          - s
+          - ESC
+          - b
+        -->
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section class="title-slide" data-background="images/backgrounds/stars.jpg">
+                    <div align="top">
+					<h1>Основы научной визуализации</h1>
+                    <h2>Что, зачем и как</h2>
+					
+					<p></p>
+					<p></p>
+					
+                    <p>Константин Володин</p>
+					
+					<small>
+						<p>
+								<a href="#">Лаборатория&nbspВВиВС&nbspПензГТУ</a>
+						</p>
+						<p>
+								<a href="#">Кафедра&nbspИТС&nbspПензГТУ</a>
+						</p>
+					</small>
+					</div>
+				</section>
+
+                <section>
+                    <h2>Научная визуализация: зачем?</h2>
+                </section>
+
+                <section>
+                    <h2>Материалы</h2>
+
+                    <ul>
+                        <li>Distributed systems for fun and profit</li>
+                        <li>link1</li>
+                        <li>link2</li>
+                        <li>
+							Поискать в Google
+							<ul>
+								<li>matlab</li>
+								<li>python</li>
+								<li>matplotlib</li>
+								<li>julia</li>
+							</ul>
+						</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Как всё это попробовать?</h2>
+                    <img src="images/production.jpg" width="500"/>
+                </section>
+
+                <section>
+                    <h2>Вопросы?</h2>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+
+        <script>
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: true,
+                history: true,
+                center: false,
+				slideNumber: true,
+                margin: 0.3,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async: true }
+					//                    { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+			
+			Reveal.configure({ slideNumber: 'c/t' });
+
+        </script>
+
+    </body>
+</html>
